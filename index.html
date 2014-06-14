@@ -54,6 +54,45 @@
                 <li>príklady použitia</li>
             </ul>
         </section>
+        <section>
+            <h3>Node.js</h3>
+
+            <p>
+                Je to platforma postavená na Google V8 prostredí (presne tom istom čo je v prehliadači chrome). Node.js
+                používa "event-drivent" a "non-blocking" I/O model. Beží v jednom vlákne.
+            </p>
+            <aside class="notes">
+                event-driven - arch. zalozena na reagovani na event - v tomto pripade si mozme predstavit ako event napriklad request od pouzivatela, tento request sa potom spracovava v callbacku
+                <br/>
+                non-blocking I/O operácie ako prístup k db, alebo zápis na fs neblokujú vlákno, ale zaregistrujú callback a ten sa spracuje až vtedy ked zadaná operácia skončí
+            </aside>
+        </section>
+        <section>
+            <section>
+                <h3>Na čo to je vhodné</h3>
+                <ul>
+                    <li>REST Api</li>
+                    <li>SPA</li>
+                    <li>Real time app (RabbitMQ)</li>
+                    <li>HTML5 mobile app </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Na čo to je nevhodné</h3>
+                <ul>
+                    <li>spracovanie obrazu, zvuku</li>
+                    <li>šifrovanie</li>
+                    <li>CPU náročné úlohy</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Kto to už používa</h3>
+                <h4>LinkedIn (mobile)</h4>
+                <h4>PayPal</h4>
+                <h4>eBay</h4>
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </section>
+        </section>
     </div>
 </div>
 
