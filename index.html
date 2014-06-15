@@ -56,10 +56,9 @@
         </section>
         <section>
             <h3>Node.js</h3>
-
             <p>
                 Je to platforma postavená na Google V8 prostredí (presne tom istom čo je v prehliadači chrome). Node.js
-                používa "event-drivent" a "non-blocking" I/O model. Beží v jednom vlákne.
+                používa "event-drivent" a "non-blocking" I/O model. App beží v jednom vlákne.
             </p>
             <aside class="notes">
                 event-driven - arch. zalozena na reagovani na event - v tomto pripade si mozme predstavit ako event
@@ -88,23 +87,73 @@
                 </ul>
             </section>
             <section>
-                <h3>Kto to už používa</h3>
-                <h4>LinkedIn (mobile)</h4>
-                <h4>PayPal</h4>
-                <h4>eBay</h4>
+                <h3>Kto to už používa v produkcii?</h3>
+                <ul>
+                    <li>LinkedIn (mobile)</li>
+                    <li>PayPal</li>
+                    <li>eBay</li>
+                </ul>
+                <p>
+                    viac info na ich techs blog
+                </p>
+            </section>
+            <section>
+                <h3>LinkedIn</h3>
+                <ul>
+                    <li>Better performance, Node.js being up to 20x faster than Rails for certain scenarios</li>
+                    <li>Using only 3 servers instead of 30, leaving room for a 10x traffic growth</li>
+                    <li>Front-end JavaScript engineers could be used for back-end code, and the two teams were actually merged into on</li>
+                </ul>
+            </section>
+            <section>
+                <h3>LinkedIn</h3>
                 <img src="img/linkedin.png" alt="LinkedIn">
+            </section>
+            <section>
+                <h3>PayPal</h3>
+                <ul>
+                    <li>Double the requests per second vs. the Java application.</li>
+                    <li>35% decrease in the average response time</li>
+                </ul>
             </section>
         </section>
         <section>
-            <h3>Iné benefity</h3>
-
-            <p>
-                Knižnice, ktoré poznáme z klienta (underscore, moment) môžeme použiť na serveri. Celá app v jednom
-                jazyku (client, server, json db).
-            </p>
-            <aside class="notes">
-                priklad programovania moderných app, veľmi vela práce v js, nie je potrebné prepínať kontext
-            </aside>
+            <h3>Node.js ecosystém</h3>
+            <ul>
+                <li>prudko sa rozrastajúca komunita</li>
+                <li>npm moduly</li>
+                <li>hosting (appfog, nodejistu, heroku atď)</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h3>npm - Node Packaged Modules</h3>
+                <ol>
+                    <li>online repo pre node.js projekty (moduly) https://www.npmjs.org/</li>
+                    <li>nástroj pre príkazový riadok pre interakciu s modulom / projektom</li>
+                </ol>
+            </section>
+            <section>
+                <h3>npm - package.json</h3>
+                package.json je descriptor, ktorý musí byť pri každom module / projekte.
+                <pre><code data-trim contenteditable>
+{
+    "name": "reveal.js",
+    "version": "2.6.2",
+    "dependencies": {},
+    "devDependencies": {}
+}
+                </code></pre>
+            </section>
+        </section>
+        <section>
+            <h3>Grunt</h3>
+            <h5>The JavaScript Task Runner</h5>
+            <ul>
+                <li>build app do produkcie</li>
+                <li>sledovanie zmien a spúšťanie úloh po zmene</li>
+                <li>využíva rôzne pluginy z npm</li>
+            </ul>
         </section>
     </div>
 </div>
