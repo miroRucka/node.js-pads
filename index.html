@@ -31,55 +31,66 @@
     <div class="slides">
         <section>
             <section>
-                <h1>Node.js</h1>
-                <img src="img/js.jpg" alt="Javascript">
+                <img src="img/node.png" alt="node.js">
 
                 <p>
                     <small>
-                        Created by Miroslav Rúčka
+                        by Miroslav Rúčka
                     </small>
                 </p>
             </section>
             <section>
-                <h3>D je správne :)</h3>
+                <iframe width="420" height="315" src="http://www.youtube.com/embed/2C3qp-Oz930?rel=0" frameborder="0"
+                        allowfullscreen></iframe>
+            </section>
+            <section>
+                <img src="img/js.jpg" alt="node.js">
             </section>
         </section>
         <section>
             <h3>Obsah</h3>
             <ul>
-                <li>čo je to ten Node.js</li>
-                <li>načo je vhodný</li>
+                <li>Node.js</li>
+                <li>Použitie</li>
+                <li>Produkcia</li>
                 <li>npm</li>
                 <li>grunt</li>
                 <li>príklady použitia</li>
             </ul>
         </section>
         <section>
-            <h3>Node.js</h3>
-            <p>
-                Je to platforma postavená na Google V8 prostredí (presne tom istom čo je v prehliadači chrome). Node.js
-                používa "event-drivent" a "non-blocking" I/O model. App beží v jednom vlákne.
-            </p>
-            <aside class="notes">
-                event-driven - arch. zalozena na reagovani na event - v tomto pripade si mozme predstavit ako event
-                napriklad request od pouzivatela, tento request sa potom spracovava v callbacku
-                <br/>
-                non-blocking I/O operácie ako prístup k db, alebo zápis na fs neblokujú vlákno, ale zaregistrujú
-                callback a ten sa spracuje až vtedy ked zadaná operácia skončí
-            </aside>
+            <section>
+                <h3>Node.js</h3>
+                <p>
+                    Je to platforma postavená na Google V8 prostredí (presne tom istom čo je v prehliadači chrome).
+                    Node.js
+                    používa "event-drivent" a "non-blocking" I/O model. App beží v jednom vlákne.
+                </p>
+                <aside class="notes">
+                    event-driven - arch. zalozena na reagovani na event - v tomto pripade si mozme predstavit ako event
+                    napriklad request od pouzivatela, tento request sa potom spracovava v callbacku
+                    <br/>
+                    non-blocking I/O operácie ako prístup k db, alebo zápis na fs neblokujú vlákno, ale zaregistrujú
+                    callback a ten sa spracuje až vtedy ked zadaná operácia skončí
+                </aside>
+            </section>
+            <section>
+                <h4>blocking vs non-blocking</h4>
+                <img src="img/bvsnonb.jpg" alt="node.js">
+                <img src="img/bvsnonb2.jpg" alt="node.js">
+            </section>
         </section>
         <section>
             <section>
-                <h3>Na čo to je vhodné</h3>
+                <h3>Na čo vhodný?</h3>
                 <ul>
                     <li>REST Api</li>
                     <li>SPA</li>
                     <li>Real time app (RabbitMQ)</li>
-                    <li>HTML5 mobile app</li>
                 </ul>
             </section>
             <section>
-                <h3>Na čo to je nevhodné</h3>
+                <h3>Na čo je nevhodný?</h3>
                 <ul>
                     <li>spracovanie obrazu, zvuku</li>
                     <li>šifrovanie</li>
@@ -87,22 +98,19 @@
                 </ul>
             </section>
             <section>
-                <h3>Kto to už používa v produkcii?</h3>
-                <ul>
-                    <li>LinkedIn (mobile)</li>
-                    <li>PayPal</li>
-                    <li>eBay</li>
-                </ul>
-                <p>
-                    viac info na ich techs blog
-                </p>
+                <h3>Použitie v produkcii?</h3>
+                <img src="img/linkedlogo.png" alt="LinkedIn logo" class="logo"/>
+                <img src="img/paypal.png" alt="PayPal" class="logo"/>
+                <img src="img/ebay.jpg" alt="ebay" class="logo"/>
             </section>
             <section>
                 <h3>LinkedIn</h3>
                 <ul>
                     <li>Better performance, Node.js being up to 20x faster than Rails for certain scenarios</li>
                     <li>Using only 3 servers instead of 30, leaving room for a 10x traffic growth</li>
-                    <li>Front-end JavaScript engineers could be used for back-end code, and the two teams were actually merged into on</li>
+                    <li>Front-end JavaScript engineers could be used for back-end code, and the two teams were actually
+                        merged into on
+                    </li>
                 </ul>
             </section>
             <section>
@@ -115,6 +123,10 @@
                     <li>Double the requests per second vs. the Java application.</li>
                     <li>35% decrease in the average response time</li>
                 </ul>
+            </section>
+            <section>
+                <h3>PayPal</h3>
+                <img src="img/paypal.gif" alt="LinkedIn">
             </section>
         </section>
         <section>
