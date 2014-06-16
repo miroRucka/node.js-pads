@@ -61,11 +61,13 @@
         <section>
             <section>
                 <h3>Node.js</h3>
-                <p>
-                    Je to platforma postavená na Google V8 prostredí (presne tom istom čo je v prehliadači chrome).
-                    Node.js
-                    používa "event-drivent" a "non-blocking" I/O model. App beží v jednom vlákne.
-                </p>
+                <ul>
+                    <li>platforma postavená na Google V8 prostredí (Google chrome)</li>
+                    <li>tenká vrstva C++</li>
+                    <li>event-drivent</li>
+                    <li>"non-blocking" I/O model</li>
+                    <li>jedno vlákno v event loop-e</li>
+                </ul>
                 <aside class="notes">
                     event-driven - arch. zalozena na reagovani na event - v tomto pripade si mozme predstavit ako event
                     napriklad request od pouzivatela, tento request sa potom spracovava v callbacku
@@ -76,8 +78,20 @@
             </section>
             <section>
                 <h4>blocking vs non-blocking</h4>
+                <img src="img/block.jpg" alt="node.js">
+                <img src="img/nonblock.jpg" alt="node.js">
+                <small>adapted from code school</small>
+            </section>
+            <section>
+                <h4>blocking vs non-blocking</h4>
                 <img src="img/bvsnonb.jpg" alt="node.js">
                 <img src="img/bvsnonb2.jpg" alt="node.js">
+                <small>adapted from code school</small>
+            </section>
+            <section>
+                <h4>Event loop</h4>
+                <img src="img/eventloop.png" alt="node.js">
+                <small>http://ageeknotes.com/</small>
             </section>
         </section>
         <section>
@@ -132,9 +146,12 @@
         <section>
             <h3>Node.js ecosystém</h3>
             <ul>
-                <li>prudko sa rozrastajúca komunita</li>
-                <li>npm moduly</li>
+                <li>Komunita, (blogy, github, stackoverflow)</li>
+                <li>npm repo</li>
                 <li>hosting (appfog, nodejistu, heroku atď)</li>
+                <li>grunt</li>
+                <li>bower</li>
+                <li>...</li>
             </ul>
         </section>
         <section>
@@ -157,6 +174,10 @@
 }
                 </code></pre>
             </section>
+            <section>
+                <h3>npm - Node Packaged Modules</h3>
+                <img src="img/ecosystem.png" alt="npm"/>
+            </section>
         </section>
         <section>
             <h3>Grunt</h3>
@@ -166,6 +187,10 @@
                 <li>sledovanie zmien a spúšťanie úloh po zmene</li>
                 <li>využíva rôzne pluginy z npm</li>
             </ul>
+        </section>
+        <section>
+            <h3>Bower</h3>
+            <h5>Bower is a package manager for the web</h5>
         </section>
     </div>
 </div>
