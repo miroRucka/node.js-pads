@@ -49,10 +49,12 @@
             <ul>
                 <li>Node.js</li>
                 <li>Použitie</li>
-                <li>Produkcia</li>
+                <li>Produkcia, kto to už používa</li>
+                <li>node.js ecosystem</li>
                 <li>npm</li>
                 <li>grunt</li>
-                <li>príklady použitia</li>
+                <li>bower</li>
+                <li>príklady</li>
             </ul>
         </section>
         <section>
@@ -61,7 +63,7 @@
                 <ul>
                     <li>platforma postavená na Google V8 prostredí (Google chrome)</li>
                     <li>tenká vrstva C++</li>
-                    <li>event-drivent</li>
+                    <li>eventmi riadený model</li>
                     <li>"non-blocking" I/O model</li>
                     <li>jedno vlákno v event loop-e</li>
                 </ul>
@@ -93,7 +95,7 @@
         </section>
         <section>
             <section>
-                <h3>Na čo vhodný?</h3>
+                <h3>Na čo je vhodný?</h3>
                 <ul>
                     <li>REST Api</li>
                     <li>SPA</li>
@@ -112,7 +114,6 @@
                 <h3>Použitie v produkcii?</h3>
                 <img src="img/linkedlogo.png" alt="LinkedIn logo" class="logo"/>
                 <img src="img/paypal.png" alt="PayPal" class="logo"/>
-                <img src="img/ebay.jpg" alt="ebay" class="logo"/>
             </section>
             <section>
                 <h3>LinkedIn</h3>
@@ -145,7 +146,7 @@
             <ul>
                 <li>Komunita, (blogy, github, stackoverflow)</li>
                 <li>npm repo</li>
-                <li>hosting (appfog, nodejistu, heroku atď)</li>
+                <li>Platform as a service (PaaS) (appfog, nodejistu, heroku atď)</li>
                 <li>grunt</li>
                 <li>bower</li>
                 <li>...</li>
@@ -184,10 +185,24 @@
                 <li>sledovanie zmien a spúšťanie úloh po zmene</li>
                 <li>využíva rôzne pluginy z npm</li>
             </ul>
+            <pre><code>npm install -g grunt-cli</code></pre>
         </section>
         <section>
             <h3>Bower</h3>
             <h5>Bower is a package manager for the web</h5>
+            <pre><code>npm install -g bower</code></pre>
+            <pre><code data-trim contenteditable>
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
+            </code></pre>
         </section>
         <section>
             <h3>Za hrsť príkladov</h3>
